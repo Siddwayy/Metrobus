@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <h1><a href="/">Metrobus</a></h1>
+            </div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <span>📧 informationservices@metrobus.com</span>
+                    <span>📞 (709) 722-9400</span>
+                </div>
+                <div class="search-container">
+                    <form action="/search">
+                        <input type="text" placeholder="Search metrobus.com">
+                        <button type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container"> 
+                <ul>
+                    <li class="nav-home"><a href="/">🏠</a></li>
+                    <li><a href="#">Schedules</a></li>
+                    <li><a href="#">Rider Links</a></li>
+    
+                    <li class="dropdown-container">
+                        <a href="#">BusCard ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#reload-BusCard-section">Reload/buy</a></li>
+                            <li><a href="#">Account Login</a></li>
+                            <li><a href="#">Register BusCard</a></li>
+                            <li><a href="#">More BusCard Info</a></li>
+                            <li><a href="#">New to Metrobus?</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Contact/Other</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+<section class="trip-planner-section">
+    <div class="tab-nav">
+        <button class="tab-link active" data-tab="planner">Google Trip Planner</button>
+        <button class="tab-link" data-tab="next-bus">Next Bus</button>
+    </div>
+
+    <div class="tab-content-container">
+        
+        <div id="planner" class="tab-content active">
+            <form>
+                <div class="planner-form-layout">
+                    <div class="form-inputs">
+                        <div class="form-group">
+                            <div class="label-wrapper">
+                                <label for="from-location">From</label>
+                                <button type="button" class="location-btn" id="get-location-btn" title="Use current location">📍</button>
+                            </div>
+                            <input type="text" id="from-location" placeholder="address / station" list="address-list"autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="to-location">To</label>
+                            <input type="text" id="to-location" placeholder="address / station" list="address-list"autocomplete="off">
+                        </div>
+                    </div>
+                    <button type="button" class="swap-btn" title="Swap locations">🔃</button>
+                </div>
+                
+                <datalist id="address-list">
+                    <option value="46 Wicklow Street"></option>
+                    <option value="173 Freshwater Road"></option>
+                </datalist>
+
+                <div class="form-group">
+                    <label for="depart-type">Date/Time:</label>
+                    <div class="datetime-group">
+                        <select id="depart-type" name="depart-type">
+                            <option>Depart around</option>
+                            <option>Arrive by</option>
+                        </select>
+                        
+                        <select name="month">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option selected>Nov</option>
+                            <option>Dec</option>
+                        </select>
+                        
+                        <select name="day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option selected>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        
+                        <select name="hour">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option selected>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        
+                        <span>:</span>
+                        
+                        <select name="minute">
+                            <option>00</option>
+                            <option>05</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>35</option>
+                            <option>40</option>
+                            <option>45</option>
+                            <option>50</option>
+                            <option>55</option>
+                        </select>
+                        
+                        <select name="ampm">
+                            <option>AM</option>
+                            <option selected>PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="route-pref">Routing Preference:</label>
+                    <select id="route-pref" name="route-pref">
+                        <option>Best route</option>
+                        <option>Less walking</option>
+                        <option>Fewer transfers</option>
+                    </select>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="cta-button">Get Directions</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="next-bus" class="tab-content">
+            <form>
+                <div class="form-group">
+                    <label for="next-bus-search">Search by transit mode, route #, name, or stop</label>
+                    <input type="text" id="next-bus-search" placeholder="e.g. 123, N9, Expo Line, or 50001">
+                </div>
+                
+                <div class="next-bus-layout">
+                    <div class="helper-links">
+                        <a href="#">📍 Nearby Stops</a>
+                        <a href="#">⭐ Favourites</a>
+                    </div>
+                    <button type="submit" class="cta-button">🔍 Find my next bus</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section> <section class="quick-links">
+            <div class="container">
+                <a href="https://drive.google.com/file/d/1SMV8n2qJh6SOWLbz6wxrbqpKaN1Zn14f/view?usp=sharing" target="_blank" class="quick-link-item">
+                    <div class="quick-link-icon">📄</div>
+                    <div class="quick-link-text">
+                        <h3>View a schedule</h3>
+                        <p>View or download a route schedule for any of our routes.</p>
+                    </div>
+                </a>
+    
+                <div class="quick-link-item dropdown-container">
+                    <div class="quick-link-icon">🛒</div>
+                    <div class="quick-link-text">
+                        <h3>Reload your BusCard ▼</h3>
+                        <p>Visit our online store to reload or buy an BusCard.</p>
+                    </div>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a href="#reload-BusCard-section">Reload/buy</a></li>
+                        <li><a href="#">Account Login</a></li>
+                        <li><a href="#">Register BusCard</a></li>
+                        <li><a href="#">More BusCard Info</a></li>
+                        <li><a href="#">New to Metrobus?</a></li>
+                    </ul>
+                </div>
+                </div>
+        </section> <section class="rider-info container">
+            <h2>Rider Information</h2>
+            <div class="timetrack-widget">
+                <div class="widget-header">
+                    <h3>TimeTrack</h3>
+                    <button>SHOW ALL</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Bus</th>
+                            <th>Direction</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rt 1-1</td>
+                            <td>1312</td>
+                            <td>Crosbie Rd - The Village</td>
+                            <td>Topsail Rd by Shoppers Drug Mart</td>
+                            <td>ON TIME @ 7:39 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Rt 1-2</td>
+                            <td>2444</td>
+                            <td>Crosbie Rd - Institutes</td>
+                            <td>Crosbie Rd civic 30</td>
+                            <td>10 MINS BEHIND @ 7:39 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Rt 2-1</td>
+                            <td>1209</td>
+                            <td>Virginia Park - Avalon Mall</td>
+                            <td>Kings Bridge Rd at Kings Bridge Court</td>
+                            <td>1 MIN AHEAD @ 7:39 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section> <section class="other-services container">
+            <h2>Other Services</h2>
+            <div class="services-grid">
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>Community Bus</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>Accessible Routes</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>GoBus</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>Metrobus On Demand</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>Mobile App</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>Text Alerts</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>eStore</h3>
+                </a>
+                <a href="#" class="service-item">
+                    <div class="service-image-placeholder">[Image]</div>
+                    <h3>Advertise with Metrobus</h3>
+                </a>
+            </div>
+        </section> <section class="stay-informed">
+            <div class="container">
+                <h2>Stay Informed 💬</h2>
+                <p>Sign-up for our text alert service. When we post a service bulletin, we'll send you the details via text message.</p>
+                <strong>Sign up now - Text Metrobus to 88188 - it's that easy!</strong>
+            </div>
+<section class="reload-mcard" id="reload-mcard-section">
+    
+    <div class="container">
+        <h2>Looking to reload or buy an mCard?</h2>
+        <a href="#" class="cta-button-outline">Reload Now</a>
+    </div>
+
+</section>
+
+    <footer>
+        <div class="footer-main container">
+            <div class="footer-mission">
+                <h3>Our Mission</h3>
+                <p>Our Mission: To be a key part of the transportation solution necessary for a sustainable St. John's.</p>
+            </div>
+            <div class="footer-links">
+                <h3><a href="#">Site Map</a></h3>
+            </div>
+            <div class="footer-links">
+                <h3><a href="#">Privacy Policy</a></h3>
+            </div>
+            <div class="footer-links">
+                <h3><a href="#">Contact Us</a></h3>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; Copyright St. John's Transportation Commission. All rights reserved.</p>
+                <p>@&trade; Trademarks of AM Royalties Limited Partnership used under license by LoyaltyOne, Co. and St. John's Transportation Commission, o/a Metrobus.</p>
+                <a href="#" class="back-to-top" title="Back to top">⬆️</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

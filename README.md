@@ -6,7 +6,8 @@ This university project for the Human Computer Interaction Course (HCI3150) rede
 Check out the live site: (https://siddwayy.github.io/Metrobus/)
 
 <img width="1025" height="1134" alt="image" src="https://github.com/user-attachments/assets/687b92a5-5a13-4a3c-8319-f9b0094a8930" />
-<img width="792" height="443" alt="image" src="https://github.com/user-attachments/assets/e841f453-2983-4668-940d-c4ee0fa1db94" />
+<img width="1028" height="435" alt="image" src="https://github.com/user-attachments/assets/5ccf4fb0-737c-4b51-a526-31fd4891d9cd" />
+
 
 ## Project Overview
 Developed for HCI2150 by Prateek Raghav and Karan Joshi, this redesign addresses original site problems including visual clutter from ads and announcements, Trip Planner buried in menus, inconsistent buttons, and recall-heavy features like stop IDs. The solution features modern dark mode, high-contrast green buttons, and prioritized core tasks.

@@ -9,7 +9,7 @@ Check out the live site: (https://siddwayy.github.io/Metrobus/)
 
 
 ## Project Overview
-Developed for HCI2150 by Prateek Raghav and Karan Joshi, this redesign addresses original site problems including visual clutter from ads and announcements, Trip Planner buried in menus, inconsistent buttons, and recall-heavy features like stop IDs. The solution features modern dark mode, high-contrast green buttons, and prioritized core tasks.
+Developed for HCI 3150 by Prateek Raghav  this redesign addresses original site problems including visual clutter from ads and announcements, Trip Planner buried in menus, inconsistent buttons, and recall-heavy features like stop IDs. The solution features modern dark mode, high-contrast green buttons, and prioritized core tasks.
 
 ## Key Features
 - De-cluttered layout without ads or extra boxes
@@ -37,15 +37,6 @@ Tested with 4 participants planning a trip from 46 Wicklow St to 173 Freshwater 
 1. Clone repo: `git clone https://github.com/siddwayy/Metrobus.git`
 2. Open `index.html` in browser
 3. Edit `styles.css` and `script.js` as needed
-
-## Documents
-- `MetroBus-Redesign.pdf` - Heuristic analysis
-- `Raghav_Prateek_JoshiKaran_Final_Project.pdf` - Full HCI2150 study report
-
-## Future Work
-- Auto-set current date/time in Trip Planner
-- Add real-time bus API
-- Improve accessibility
 
 ## Contributors
 - Prateek Raghav

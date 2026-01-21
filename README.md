@@ -5,8 +5,7 @@ This university project for the Human Computer Interaction Course (HCI3150) rede
 ## Live Demo
 Check out the live site: (https://siddwayy.github.io/Metrobus/)
 
-<img width="1025" height="1134" alt="image" src="https://github.com/user-attachments/assets/687b92a5-5a13-4a3c-8319-f9b0094a8930" />
-<img width="1028" height="435" alt="image" src="https://github.com/user-attachments/assets/5ccf4fb0-737c-4b51-a526-31fd4891d9cd" />
+<img width="1028" height="1720" alt="image" src="https://github.com/user-attachments/assets/a1894685-49dd-401d-9d25-d1e99fac12fc" />
 
 
 ## Project Overview
